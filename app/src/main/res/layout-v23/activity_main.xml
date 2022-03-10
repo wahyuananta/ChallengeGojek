@@ -13,8 +13,7 @@
         app:layout_constraintBottom_toTopOf="@+id/nav_bottom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:scrollIndicators="none"
-        tools:targetApi="23">
+        android:scrollIndicators="none">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -74,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/riwayat_saldo"
-                    android:textColor="@color/green_gojek"
+                    android:textColor="@color/teal_700"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@id/tv_saldo"
@@ -128,7 +127,7 @@
                     android:id="@+id/icon_eksplor"
                     android:layout_width="68dp"
                     android:layout_height="68dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:src="@drawable/icon_eksplor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/icon_isi_saldo"
