@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/navbar"
         app:layout_constraintBottom_toTopOf="@+id/nav_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:scrollIndicators="none">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -57,7 +59,7 @@
                     android:id="@+id/tv_saldo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp109.048"
+                    android:text="@string/saldo_gopay"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -68,7 +70,7 @@
                     android:id="@+id/tv_riwayat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Klik &amp; cek riwayat"
+                    android:text="@string/riwayat_saldo"
                     android:textColor="@color/teal_700"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -89,7 +91,7 @@
                     android:id="@+id/tv_bayar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bayar"
+                    android:text="@string/bayar"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/icon_bayar"
@@ -110,7 +112,7 @@
                     android:id="@+id/tv_isisaldo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Isi Saldo"
+                    android:text="@string/isi_saldo"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/icon_isi_saldo"
@@ -131,7 +133,7 @@
                     android:id="@+id/tv_eksplor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Eksplor"
+                    android:text="@string/eksplor"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/icon_eksplor"
@@ -167,7 +169,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/silver"
-                    android:text="GoRide"
+                    android:text="@string/goride"
                     android:textSize="18sp"
                     app:layout_constraintTop_toBottomOf="@id/icon_goride"
                     app:layout_constraintStart_toStartOf="@id/icon_goride"
@@ -190,7 +192,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/icon_goride"
                     android:textColor="@color/silver"
-                    android:text="GoCar"
+                    android:text="@string/gocar"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@id/icon_gocar"
                     app:layout_constraintEnd_toEndOf="@id/icon_gocar" />
@@ -212,7 +214,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/icon_goride"
                     android:textColor="@color/silver"
-                    android:text="GoFood"
+                    android:text="@string/gofood"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@id/icon_gofood"
                     app:layout_constraintEnd_toEndOf="@id/icon_gofood" />
@@ -234,7 +236,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/icon_goride"
                     android:textColor="@color/silver"
-                    android:text="GoSend"
+                    android:text="@string/gosend"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@id/icon_gosend"
                     app:layout_constraintEnd_toEndOf="@id/icon_gosend" />
@@ -255,7 +257,7 @@
                     android:id="@+id/tv_gomart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GoMart"
+                    android:text="@string/gomart"
                     app:layout_constraintTop_toBottomOf="@id/icon_gomart"
                     app:layout_constraintStart_toStartOf="@id/icon_gomart"
                     app:layout_constraintEnd_toEndOf="@id/icon_gomart"
@@ -278,7 +280,7 @@
                     android:id="@+id/tv_gopulsa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GoPulsa"
+                    android:text="@string/gopulsa"
                     app:layout_constraintTop_toBottomOf="@id/icon_gomart"
                     app:layout_constraintStart_toStartOf="@id/icon_gopulsa"
                     app:layout_constraintEnd_toEndOf="@id/icon_gopulsa"
@@ -297,10 +299,10 @@
                     android:background="@null" />
 
                 <TextView
+                    android:id="@+id/tv_checkin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_checkin"
-                    android:text="Check in"
+                    android:text="@string/check_in"
                     app:layout_constraintTop_toBottomOf="@id/icon_gomart"
                     app:layout_constraintStart_toStartOf="@id/icon_chekckin"
                     app:layout_constraintEnd_toEndOf="@id/icon_chekckin"
@@ -322,7 +324,7 @@
                     android:id="@+id/tv_lainnya"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lainnya"
+                    android:text="@string/lainnya"
                     app:layout_constraintTop_toBottomOf="@id/icon_gomart"
                     app:layout_constraintStart_toStartOf="@id/icon_lainnya"
                     app:layout_constraintEnd_toEndOf="@id/icon_lainnya"
@@ -370,6 +372,16 @@
                     app:layout_constraintBottom_toBottomOf="@+id/background_bintang_cons"
                     android:src="@drawable/icon_star" />
 
+                <TextView
+                    android:id="@+id/tv_xp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/icon_progress"
+                    app:layout_constraintStart_toStartOf="@id/icon_progress"
+                    android:text="@string/xp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
                 <ImageView
                     android:id="@+id/icon_progress"
                     android:src="@drawable/ic_line_progress"
@@ -379,6 +391,15 @@
                     app:layout_constraintStart_toEndOf="@id/icon_star"
                     app:layout_constraintEnd_toStartOf="@id/icon_arrow"
                     app:layout_constraintBottom_toBottomOf="@id/icon_star" />
+
+                <TextView
+                    android:id="@+id/tv_harta_karun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/icon_progress"
+                    app:layout_constraintTop_toBottomOf="@id/icon_progress"
+                    android:text="@string/harta_karun"
+                    android:textColor="@color/black" />
 
                 <ImageView
                     android:id="@+id/icon_arrow"
@@ -390,26 +411,6 @@
                     app:layout_constraintStart_toEndOf="@id/icon_progress"
                     app:layout_constraintEnd_toEndOf="@+id/background_bintang_cons" />
 
-                <TextView
-                    android:id="@+id/tv_xp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toTopOf="@id/icon_progress"
-                    app:layout_constraintStart_toStartOf="@id/icon_progress"
-                    android:text="193 XP lagi ada harta karun"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/tv_harta_karun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="@id/icon_progress"
-                    app:layout_constraintTop_toBottomOf="@id/icon_progress"
-                    android:text="Harta karun bentar lagi hilang"
-                    android:textColor="@color/black" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -419,7 +420,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Akses Cepat"
+            android:text="@string/akses_cepat"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
@@ -460,7 +461,7 @@
                     app:layout_constraintTop_toTopOf="@id/icon_voucher"
                     app:layout_constraintBottom_toBottomOf="@id/icon_voucher"
                     app:layout_constraintEnd_toStartOf="@id/icon_arrow_voucher"
-                    android:text="Ada voucher nganggur, nih" />
+                    android:text="@string/voucher" />
 
                 <ImageView
                     android:id="@+id/icon_arrow_voucher"
@@ -500,7 +501,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/icon_restoran"
                     app:layout_constraintStart_toEndOf="@id/icon_restoran"
                     app:layout_constraintEnd_toStartOf="@id/icon_arrow_restoran"
-                    android:text="Restoran terdekat" />
+                    android:text="@string/restoran_terdekat" />
 
                 <ImageView
                     android:id="@+id/icon_arrow_restoran"
@@ -548,7 +549,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/background_banner"
                     app:layout_constraintStart_toStartOf="@id/background_banner"
-                    android:text="Promo GoPay"
+                    android:text="@string/promo_gopay"
                     android:paddingStart="12dp"
                     android:paddingVertical="6dp"
                     android:textStyle="bold"
@@ -561,7 +562,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/tv_title_banner"
                     app:layout_constraintStart_toStartOf="@id/tv_title_banner"
-                    android:text="Bayar apa aja lebih hemat pakai GoPay"
+                    android:text="@string/deskripsi_promo"
                     android:paddingStart="12dp"
                     android:paddingBottom="12dp"
                     android:textColor="@color/black" />
@@ -602,7 +603,7 @@
                     android:background="@drawable/radius_50"
                     android:backgroundTint="@color/white"
                     android:drawableLeft="@drawable/ic_search"
-                    android:hint="Cari layanan. makanan. &amp; tujuan"
+                    android:hint="@string/search"
                     android:textSize="16sp"
                     android:padding="12dp"
                     app:layout_constraintBottom_toBottomOf="@id/toolbar_cons"
@@ -656,6 +657,18 @@
             app:layout_constraintStart_toStartOf="@id/bottom_toolbar"
             app:layout_constraintEnd_toStartOf="@id/icon_promo" />
 
+        <TextView
+            android:id="@+id/tv_beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beranda"
+            android:textSize="18sp"
+            android:textColor="@color/silver"
+            app:layout_constraintTop_toBottomOf="@id/icon_beranda"
+            app:layout_constraintStart_toStartOf="@id/icon_beranda"
+            app:layout_constraintEnd_toEndOf="@id/icon_beranda"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_toolbar" />
+
         <ImageButton
             android:id="@+id/icon_promo"
             android:layout_width="32dp"
@@ -667,6 +680,18 @@
             app:layout_constraintStart_toEndOf="@id/icon_beranda"
             app:layout_constraintEnd_toStartOf="@id/icon_pesanan" />
 
+        <TextView
+            android:id="@+id/tv_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/silver"
+            android:text="@string/promo"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_promo"
+            app:layout_constraintBottom_toBottomOf="@id/tv_beranda"
+            app:layout_constraintStart_toStartOf="@id/icon_promo"
+            app:layout_constraintEnd_toEndOf="@id/icon_promo" />
+
         <ImageButton
             android:id="@+id/icon_pesanan"
             android:layout_width="32dp"
@@ -677,6 +702,18 @@
             app:layout_constraintTop_toTopOf="@id/icon_beranda"
             app:layout_constraintStart_toEndOf="@id/icon_promo"
             app:layout_constraintEnd_toStartOf="@id/icon_chat" />
+
+        <TextView
+            android:id="@+id/tv_pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/silver"
+            android:text="@string/pesanan"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_pesanan"
+            app:layout_constraintBottom_toBottomOf="@id/tv_beranda"
+            app:layout_constraintStart_toStartOf="@id/icon_pesanan"
+            app:layout_constraintEnd_toEndOf="@id/icon_pesanan" />
 
         <ImageButton
             android:id="@+id/icon_chat"
@@ -690,48 +727,12 @@
             app:layout_constraintEnd_toEndOf="@id/bottom_toolbar" />
 
         <TextView
-            android:id="@+id/tv_beranda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Beranda"
-            android:textSize="18dp"
-            android:textColor="@color/silver"
-            app:layout_constraintTop_toBottomOf="@id/icon_beranda"
-            app:layout_constraintStart_toStartOf="@id/icon_beranda"
-            app:layout_constraintEnd_toEndOf="@id/icon_beranda"
-            app:layout_constraintBottom_toBottomOf="@id/bottom_toolbar" />
-
-        <TextView
-            android:id="@+id/tv_promo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/silver"
-            android:text="Promo"
-            android:textSize="18dp"
-            app:layout_constraintTop_toBottomOf="@id/icon_promo"
-            app:layout_constraintBottom_toBottomOf="@id/tv_beranda"
-            app:layout_constraintStart_toStartOf="@id/icon_promo"
-            app:layout_constraintEnd_toEndOf="@id/icon_promo" />
-
-        <TextView
-            android:id="@+id/tv_pesanan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/silver"
-            android:text="Pesanan"
-            android:textSize="18dp"
-            app:layout_constraintTop_toBottomOf="@id/icon_pesanan"
-            app:layout_constraintBottom_toBottomOf="@id/tv_beranda"
-            app:layout_constraintStart_toStartOf="@id/icon_pesanan"
-            app:layout_constraintEnd_toEndOf="@id/icon_pesanan" />
-
-        <TextView
             android:id="@+id/tv_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/silver"
-            android:text="Chat"
-            android:textSize="18dp"
+            android:text="@string/chat"
+            android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@id/icon_chat"
             app:layout_constraintBottom_toBottomOf="@id/tv_beranda"
             app:layout_constraintStart_toStartOf="@id/icon_chat"
