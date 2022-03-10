@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_beranda"
+        android:icon="@drawable/nav_beranda"
+        android:title="Beranda"/>
+
+    <item
+        android:id="@+id/nav_promo"
+        android:icon="@drawable/nav_promo"
+        android:title="Promo"/>
+
+    <item
+        android:id="@+id/nav_pesanan"
+        android:icon="@drawable/nav_pesanan"
+        android:title="Pesanan"/>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/nav_chat"
+        android:title="Chat"/>
+
+</menu>
